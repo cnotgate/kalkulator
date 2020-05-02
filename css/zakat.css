@@ -1,0 +1,110 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*  Akhir global */
+
+header {
+	height: 3em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgba(14, 14, 224, 0.76);
+}
+
+header .logo p {
+	/* background-color: ; */
+	border-radius: 0.7em;
+	padding: 0 0.5em;
+	margin: 0;
+	margin-left: 0em;
+	color: aquamarine;
+	font-size: 1.1rem;
+	font-family: Poppins, sans-serif;
+	font-weight: 700;
+}
+
+header .logo p span {
+	font-style: italic;
+	color: mediumaquamarine;
+}
+
+header nav {
+	display: flex;
+	margin-right: 0em;
+	cursor: pointer;
+}
+
+header nav img {
+	width: 1.9rem;
+	display: inline-block;
+	transition: 0.3s;
+}
+
+header nav p {
+	margin: 0;
+	margin-top: 0.2em;
+	font-family: Poppins, sans-serif;
+	color: whitesmoke;
+}
+
+/* Akhir header */
+
+menu {
+	z-index: 3;
+	right: 0;
+	margin: 0;
+	margin-right: 0.5em;
+	margin-top: 0.5em;
+	padding: 0;
+	padding: 0 0.5em;
+	height: 9em;
+	position: absolute;
+	justify-content: space-evenly;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	border-radius: 0.5em;
+	background-color: whitesmoke;
+	box-shadow: 0 0 0.3em gray;
+
+	transition: 0.2s;
+	pointer-events: none;
+	opacity: 0;
+	transform: translate(0, -0.7em);
+}
+
+menu a {
+	text-decoration: none;
+	/* height: 0; */
+	margin-bottom: 0.7em;
+	font-size: 0.9rem;
+	font-family: Montserrat, sans-serif;
+	color: black;
+}
+
+/* Akhir menu */
+
+main {
+	text-align: center;
+	margin-top: 2em;
+}
+
+main .judul {
+	margin: 0.5em 0;
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+	font-size: 1.25rem;
+}
+
+main .zakatpenghasilan {
+	font-family: Montserrat, sans-serif;
+}
+
+main .zakatpenghasilan input {
+	margin-right: 2em;
+	padding: 0 0.3em;
+	height: 1.5em;
+	border: 0.05em solid;
+}

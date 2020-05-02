@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Kalkulator zakat online yang simpel dan mudah digunakan untuk menghitung zakat."
+		/>
+		<meta http-equiv="Content-Language" content="id, in" />
+		<link rel="stylesheet" href="css/zakat.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="img/icon.png" type="image/x-icon" />
+		<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+		<title>Kalkulator Zakat</title>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<p>Kalkulator<span>.my.id</span></p>
+			</div>
+			<nav onclick="dropdown()">
+				<p>Jenis Kalkulator</p>
+				<img src="img/expand.svg" alt="expand" />
+			</nav>
+		</header>
+		<menu>
+			<a href="index.html">Kalkulator Biasa</a>
+			<a href="scientific.html">Kalkulator Scientific</a>
+			<a href="zakat.html">Kalkulator Zakat</a>
+		</menu>
+		<main>
+			<p class="judul">Kalkulator Zakat</p>
+			<div class="zakatpenghasilan">
+				<p>Penghasilan/bulan:</p>
+				<label for="penghasilan">Rp.</label>
+				<input oninput="hitung(); format();" name="penghasilan" type="text" class="penghasilan" />
+				<p>Zakat: Rp.<span>0</span></p>
+			</div>
+		</main>
+		<script src="js/zakat.js"></script>
+	</body>
+</html>
