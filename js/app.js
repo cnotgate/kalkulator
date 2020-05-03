@@ -72,4 +72,3 @@ function samadengan() {
 	hasil = input.value.replace(/:/g, "/").replace(/x/g, "*");
 	input.value = eval(hasil);
 }
-console.log(10 * 10 * 10);
