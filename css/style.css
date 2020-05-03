@@ -14,7 +14,6 @@ header {
 }
 
 header .logo p {
-	/* background-color: ; */
 	border-radius: 0.7em;
 	padding: 0 0.5em;
 	margin: 0;
@@ -34,6 +33,7 @@ header nav {
 	display: flex;
 	margin-right: 0em;
 	cursor: pointer;
+	white-space: nowrap;
 }
 
 header nav img {
@@ -96,24 +96,23 @@ main .kalkulator {
 	background-color: rgb(252, 249, 249);
 	box-shadow: 0 0 0.4em grey;
 	border-radius: 0.7em;
-	padding: 1em 2em;
-	padding-bottom: 3em;
-	padding-right: 2.2em;
+	padding: 0.7em 3em;
+	padding-bottom: 1.5em;
 	width: 13em;
 	height: 17em;
 	font-family: Montserrat, sans-serif;
 	display: grid;
-	grid-template-columns: 3.2em 3.2em 3.2em 3.2em;
-	grid-template-rows: 3.2em 3.2em 3.2em 3.2em 3.2em;
-	grid-gap: 0.7em;
+	grid-template-columns: 3.1em 3.1em 3.1em 3.1em 3.1em;
+	grid-template-rows: 3.1em 3.1em 3.1em 3.1em 3.1em;
+	grid-gap: 0.4em;
 	align-items: center;
 	justify-content: center;
 	grid-template-areas:
-		"input input input input ."
-		"tujuh delapan sembilan tambah ."
-		"empat lima enam kurang ."
-		"satu dua tiga bagi ."
-		"koma nol samadengan kali .";
+		"input input input input input"
+		"buka tujuh delapan sembilan tambah"
+		"tutup empat lima enam kurang"
+		". satu dua tiga bagi"
+		"c koma nol samadengan kali";
 }
 
 main input {
@@ -140,7 +139,7 @@ main .angka {
 	-webkit-user-select: none; /* Chrome, Safari, and Opera */
 	-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 	border-radius: 0.4em;
-	font-size: 1.25rem;
+	font-size: 1.2rem;
 	font-weight: 700;
 	text-align: center;
 	border: 0.05em solid;
@@ -163,7 +162,7 @@ main .operator {
 	background-color: rgba(14, 14, 224, 0.76);
 	border: 0.05em solid black;
 	font-weight: 700;
-	font-size: 1.25rem;
+	font-size: 1.2rem;
 	/* border-radius: ; */
 }
 
@@ -227,18 +226,28 @@ main .samadengan {
 	grid-area: samadengan;
 }
 
-main .koma{
+main .koma {
 	grid-area: koma;
 }
 
-.delete {
-	position: absolute;
-	margin-top: 2em;
-	margin-left: 7.8em;
+main .kurungbuka {
+	grid-area: buka;
 }
 
-.clear {
+main .kurungtutup {
+	grid-area: tutup;
+}
+
+main .c {
+	grid-area: c;
+}
+
+/* .delete {
 	position: absolute;
 	margin-top: 2em;
-	margin-left: -7em;
+	margin-left: -8em;
+} */
+
+main .delete {
+	position: static;
 }

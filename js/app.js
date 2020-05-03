@@ -72,3 +72,17 @@ function samadengan() {
 	hasil = input.value.replace(/:/g, "/").replace(/x/g, "*");
 	input.value = eval(hasil);
 }
+
+span = document.querySelector("main .zakatpenghasilan span");
+penghasilan = document.querySelector("main .zakatpenghasilan .penghasilan");
+
+function format() {
+	penghasilan.value = numeral(penghasilan.value.replace(/,/g, "")).format("0,0");
+}
+
+function hitung() {
+	let hasil1 = penghasilan.value.replace(/,/g, "");
+	let hasil = hasil1 * (2.5 / 100);
+	let myNumeral = numeral(hasil).format("0,0");
+	span.innerHTML = myNumeral;
+}
