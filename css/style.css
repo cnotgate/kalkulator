@@ -96,30 +96,31 @@ main .kalkulator {
 	background-color: rgb(252, 249, 249);
 	box-shadow: 0 0 0.4em grey;
 	border-radius: 0.7em;
-	padding: 0.8em 1em;
+	padding: 1em 2em;
+	padding-bottom: 3em;
 	padding-right: 2.2em;
 	width: 13em;
 	height: 17em;
 	font-family: Montserrat, sans-serif;
 	display: grid;
-	grid-template-columns: 3em 3em 3em 3em;
-	grid-template-rows: 3em 3em 3em 3em 3em;
-	grid-gap: 0.5em;
+	grid-template-columns: 3.2em 3.2em 3.2em 3.2em;
+	grid-template-rows: 3.2em 3.2em 3.2em 3.2em 3.2em;
+	grid-gap: 0.7em;
 	align-items: center;
 	justify-content: center;
 	grid-template-areas:
-		"input input input input"
-		"tujuh delapan sembilan tambah"
-		"empat lima enam kurang"
-		"satu dua tiga bagi"
-		". nol samadengan kali";
+		"input input input input ."
+		"tujuh delapan sembilan tambah ."
+		"empat lima enam kurang ."
+		"satu dua tiga bagi ."
+		"koma nol samadengan kali .";
 }
 
 main input {
 	background-color: white;
 	outline: none;
 	border: 0.05em solid;
-	padding: 0em 0.2em;
+	padding: 0em 0.4em;
 	text-align: right;
 	font-size: 1rem;
 	font-family: Montserrat, sans-serif;
@@ -139,7 +140,7 @@ main .angka {
 	-webkit-user-select: none; /* Chrome, Safari, and Opera */
 	-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 	border-radius: 0.4em;
-	font-size: 1.2rem;
+	font-size: 1.25rem;
 	font-weight: 700;
 	text-align: center;
 	border: 0.05em solid;
@@ -162,7 +163,7 @@ main .operator {
 	background-color: rgba(14, 14, 224, 0.76);
 	border: 0.05em solid black;
 	font-weight: 700;
-	font-size: 1.2rem;
+	font-size: 1.25rem;
 	/* border-radius: ; */
 }
 
@@ -226,26 +227,18 @@ main .samadengan {
 	grid-area: samadengan;
 }
 
-.delete,
+main .koma{
+	grid-area: koma;
+}
+
+.delete {
+	position: absolute;
+	margin-top: 2em;
+	margin-left: 7.8em;
+}
+
 .clear {
-	z-index: 2;
-	position: fixed;
-	display: block;
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* Internet Explorer */
-	-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
-	-webkit-user-select: none; /* Chrome, Safari, and Opera */
-	-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
-}
-
-.delete img {
-	width: 1.2rem;
-	margin-left: 14em;
-	margin-top: 1.7em;
-}
-
-.clear img {
-	width: 1.2rem;
-	margin-top: 1.7em;
-	margin-right: 13em;
+	position: absolute;
+	margin-top: 2em;
+	margin-left: -7em;
 }
