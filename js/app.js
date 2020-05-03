@@ -69,6 +69,6 @@ function hapus() {
 }
 
 function samadengan() {
-	hasil = input.value.replace(":", "/").replace("x", "*");
+	hasil = input.value.replace(/:/g, "/").replace(/x/g, "*");
 	input.value = eval(hasil);
 }
