@@ -69,8 +69,32 @@ function hapus() {
 }
 
 function samadengan() {
-	hasil = input.value.replace(/:/g, "/").replace(/x/g, "*");
-	input.value = eval(hasil);
+	function checksin() {
+		nsin = input.value.indexOf("sin");
+	}
+	function checkcos() {
+		ncos = input.value.indexOf("cos");
+	}
+	function checktan() {
+		ntan = input.value.indexOf("tan");
+	}
+	checksin();
+	checkcos();
+	checktan();
+	if (nsin != -1 || ncos != -1 || ntan != -1) {
+		if (nsin != -1) {
+			ina = input.value.slice(0, nsin);
+			inb = input.value.slice(nsin, nsin + 3);
+		}
+	} else {
+		hasil = input.value.replace(/:/g, "/").replace(/x/g, "*");
+		input.value = eval(hasil);
+	}
+}
+
+function formatkal() {
+	let inval = input.value;
+	input.value = numeral(inval).format("0");
 }
 
 span = document.querySelector("main .zakatpenghasilan span");
