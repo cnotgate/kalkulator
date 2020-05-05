@@ -3,16 +3,16 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Kalkulator online yang simpel dan mudah untuk digunakan." />
+		<meta name="description" content="Kalkulator ilmiah online." />
 		<meta http-equiv="Content-Language" content="id" />
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/ilmiah.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,700&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="icon" href="img/icon.png" type="image/x-icon" />
 		<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
-		<title>Kalkulator Online</title>
+		<title>Kalkulator Ilmiah</title>
 	</head>
 	<body>
 		<header>
@@ -52,9 +52,10 @@
 				<div onclick="input.value += ')'; " class="kurungtutup operator">)</div>
 				<div onclick="input.value = ''; " class="c operator">C</div>
 				<img class="delete operator" onclick="hapus()" src="img/backspace.svg" alt="backspace" />
+				<div onclick="input.value += 'sin';" class="sin ilmiah">Sin</div>
+				<div onclick="input.value += 'cos';" class="cos ilmiah">Cos</div>
 			</div>
 		</main>
-		<footer></footer>
 
 		<script src="js/app.js"></script>
 	</body>

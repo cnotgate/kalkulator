@@ -1,0 +1,275 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*  Akhir global */
+
+header {
+	height: 3em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgba(14, 14, 224, 0.76);
+}
+
+header .logo p {
+	border-radius: 0.7em;
+	padding: 0 0.5em;
+	margin: 0;
+	margin-left: 0em;
+	color: aquamarine;
+	font-size: 1.1rem;
+	font-family: Poppins, sans-serif;
+	font-weight: 700;
+}
+
+header .logo p span {
+	font-style: italic;
+	color: mediumaquamarine;
+}
+
+header nav {
+	display: flex;
+	margin-right: 0em;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+header nav img {
+	width: 1.9rem;
+	display: inline-block;
+	transition: 0.3s;
+}
+
+header nav p {
+	margin: 0;
+	margin-top: 0.2em;
+	font-family: Poppins, sans-serif;
+	color: whitesmoke;
+}
+
+/* Akhir header */
+
+menu {
+	z-index: 3;
+	right: 0;
+	margin: 0;
+	margin-right: 0.5em;
+	margin-top: 0.5em;
+	padding: 0;
+	padding: 0 0.5em;
+	height: 9em;
+	position: absolute;
+	justify-content: space-evenly;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	border-radius: 0.5em;
+	background-color: whitesmoke;
+	box-shadow: 0 0 0.3em gray;
+
+	transition: 0.2s;
+	pointer-events: none;
+	opacity: 0;
+	transform: translate(0, -0.7em);
+}
+
+menu a {
+	text-decoration: none;
+	/* height: 0; */
+	margin-bottom: 0.7em;
+	font-size: 0.9rem;
+	font-family: Montserrat, sans-serif;
+	color: black;
+}
+
+/* Akhir menu */
+
+main {
+	margin-top: 2em;
+	display: flex;
+	justify-content: center;
+}
+
+main .kalkulator {
+	background-color: rgb(252, 249, 249);
+	box-shadow: 0 0 0.4em grey;
+	border-radius: 0.7em;
+	padding: 0.7em 3em;
+	padding-bottom: 4.5em;
+	width: 13em;
+	height: 17em;
+	font-family: Montserrat, sans-serif;
+	display: grid;
+	grid-template-columns: 3.1em 3.1em 3.1em 3.1em 3.1em;
+	grid-template-rows: 3.1em 3.1em 3.1em 3.1em 3.1em 3.1em 3.1em;
+	grid-gap: 0.4em;
+	align-items: center;
+	justify-content: center;
+	grid-template-areas:
+		"input input input input input"
+		"buka tujuh delapan sembilan tambah"
+		"tutup empat lima enam kurang"
+		". satu dua tiga bagi"
+		"c koma nol samadengan kali"
+		"sin . . . ."
+		". . . . .";
+}
+
+main input {
+	background-color: white;
+	outline: none;
+	border: 0.05em solid;
+	padding: 0em 0.4em;
+	text-align: right;
+	font-size: 1rem;
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+	height: 2em;
+	grid-area: input;
+}
+
+main .angka:focus {
+	background-color: grey;
+}
+
+main .angka {
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer */
+	-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+	-webkit-user-select: none; /* Chrome, Safari, and Opera */
+	-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+	border-radius: 0.4em;
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-align: center;
+	border: 0.05em solid;
+	background-color: white;
+	padding: 0.7em;
+	width: 1.2em;
+}
+
+main .operator {
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer */
+	-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+	-webkit-user-select: none; /* Chrome, Safari, and Opera */
+	-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+	border-radius: 0.4em;
+	width: 1.2em;
+	text-align: center;
+	padding: 0.7em;
+	color: whitesmoke;
+	background-color: rgba(14, 14, 224, 0.76);
+	border: 0.05em solid black;
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+main .nol {
+	grid-area: nol;
+}
+
+main .satu {
+	grid-area: satu;
+}
+
+main .dua {
+	grid-area: dua;
+}
+
+main .tiga {
+	grid-area: tiga;
+}
+
+main .empat {
+	grid-area: empat;
+}
+
+main .lima {
+	grid-area: lima;
+}
+
+main .enam {
+	grid-area: enam;
+}
+
+main .tujuh {
+	grid-area: tujuh;
+}
+
+main .delapan {
+	grid-area: delapan;
+}
+
+main .sembilan {
+	grid-area: sembilan;
+}
+
+main .tambah {
+	grid-area: tambah;
+}
+
+main .kurang {
+	grid-area: kurang;
+}
+
+main .kali {
+	grid-area: kali;
+}
+
+main .bagi {
+	grid-area: bagi;
+}
+
+main .samadengan {
+	grid-area: samadengan;
+}
+
+main .koma {
+	grid-area: koma;
+}
+
+main .kurungbuka {
+	grid-area: buka;
+}
+
+main .kurungtutup {
+	grid-area: tutup;
+}
+
+main .c {
+	grid-area: c;
+}
+
+main .sin {
+	grid-area: sin;
+}
+
+/* .delete {
+	position: absolute;
+	margin-top: 2em;
+	margin-left: -8em;
+} */
+
+main .delete {
+	position: static;
+}
+
+main .ilmiah {
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer */
+	-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+	-webkit-user-select: none; /* Chrome, Safari, and Opera */
+	-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+	border-radius: 0.4em;
+	width: 1.2em;
+	text-align: center;
+	padding: 15px;
+	color: whitesmoke;
+	background-color: rgba(14, 14, 224, 0.76);
+	border: 0.05em solid black;
+	font-weight: 700;
+	font-size: 1rem;
+}
