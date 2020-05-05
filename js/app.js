@@ -69,27 +69,8 @@ function hapus() {
 }
 
 function samadengan() {
-	function checksin() {
-		nsin = input.value.indexOf("sin");
-	}
-	function checkcos() {
-		ncos = input.value.indexOf("cos");
-	}
-	function checktan() {
-		ntan = input.value.indexOf("tan");
-	}
-	checksin();
-	checkcos();
-	checktan();
-	if (nsin != -1 || ncos != -1 || ntan != -1) {
-		if (nsin != -1) {
-			ina = input.value.slice(0, nsin);
-			inb = input.value.slice(nsin, nsin + 3);
-		}
-	} else {
-		hasil = input.value.replace(/:/g, "/").replace(/x/g, "*");
-		input.value = eval(hasil);
-	}
+	hasil = input.value.replace(/:/g, "/").replace(/x/g, "*");
+	input.value = eval(hasil);
 }
 
 function formatkal() {
